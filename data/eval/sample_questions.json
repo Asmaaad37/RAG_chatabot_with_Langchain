@@ -1,0 +1,32 @@
+{
+  "document": "data/sample_docs/VirtualTryAll.pdf",
+  "about": "Test set for retrieval quality. A question counts as found when one of the chunks sent to the LLM contains any of its 'answer_contains' strings (case-insensitive). Off-topic questions should be rejected by the threshold.",
+  "questions": [
+    {"question": "How many GPUs were used to train the model, and for how many epochs?", "answer_contains": ["8 NVIDIA A100"], "pages": [7]},
+    {"question": "How long does inference take for a single pass?", "answer_contains": ["6 seconds"], "pages": [12]},
+    {"question": "What guidance scale is used during inference?", "answer_contains": ["guidance scale of 5"], "pages": [7]},
+    {"question": "What learning rate was used for training?", "answer_contains": ["learning rate of 1e"], "pages": [7, 12]},
+    {"question": "How large was the in-house training dataset?", "answer_contains": ["1.2M samples"], "pages": [7]},
+    {"question": "Why did the authors choose FiLM over cross attention?", "answer_contains": ["FiLM is cheaper to compute"], "pages": [8]},
+    {"question": "What CLIP score did the FiLM variant achieve?", "answer_contains": ["88.14"], "pages": [8]},
+    {"question": "Why does the model struggle with shoes?", "answer_contains": ["shoes, the model frequently fails"], "pages": [12]},
+    {"question": "What are the limitations of Diffuse to Choose?", "answer_contains": ["DTC has limitations", "More on Limitations"], "pages": [8, 12]},
+    {"question": "What does the Adapter module consist of?", "answer_contains": ["four layers"], "pages": [5]},
+    {"question": "Which model is used as the backbone?", "answer_contains": ["as our backbone"], "pages": [7]},
+    {"question": "What alternatives to inserting the reference image were tried for the hint signal?", "answer_contains": ["Canny Edges and HED", "Canny Edges or Holistically"], "pages": [5, 7]},
+    {"question": "Why was DCCF not used for comparison?", "answer_contains": ["copypaste artifacts"], "pages": [14]},
+    {"question": "What three conditions must a Virtual Try-All model fulfill?", "answer_contains": ["three primary conditions"], "pages": [2]},
+    {"question": "How is the largest rectangle inside the mask found?", "answer_contains": ["histogram"], "pages": [12]},
+    {"question": "Which public dataset was used for training and testing?", "answer_contains": ["VITONHD-NoFace"], "pages": [7]},
+    {"question": "What network is the perceptual loss computed with?", "answer_contains": ["VGGNet", "VGG model"], "pages": [2, 5, 7]},
+    {"question": "What image encoder produces the 1536-dimensional patch embeddings?", "answer_contains": ["1536"], "pages": [5, 12]}
+  ],
+  "off_topic": [
+    "What is a good recipe for chocolate cake?",
+    "Who won the football World Cup in 1998?",
+    "What is the capital of Australia?",
+    "How do I reset my Wi-Fi router password?",
+    "What is Amazon's current stock price?",
+    "Who wrote Pride and Prejudice?"
+  ]
+}

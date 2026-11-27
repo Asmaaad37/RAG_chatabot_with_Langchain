@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environment
+.venv/
+venv/
+
+# Secrets
+.env
+
+# Runtime data (keep the folders, ignore the contents)
+data/uploads/*
+!data/uploads/.gitkeep
+data/chroma_db/*
+!data/chroma_db/.gitkeep
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Saved chats (may contain your documents' content)
+data/chats/
+data/feedback.jsonl
+
+# Private project summary PDF: never commit (owner's rule)
+*Project_Summary*.pdf
+
+# /brag video output (large render + copied assets)
+brag-output*/
+
+# Claude Code project notes: kept local, never committed (owner's rule)
+CLAUDE.md
