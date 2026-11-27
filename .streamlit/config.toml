@@ -1,0 +1,25 @@
+# Streamlit settings and the base theme (near-black with a magenta/purple accent).
+# Extra styling (glow, gradients, bubbles, cards) is in src/ui/styles.py.
+
+[theme]
+base = "dark"
+primaryColor = "#B44CE8"
+backgroundColor = "#0A0A0F"
+secondaryBackgroundColor = "#17171F"
+textColor = "#F5F5F7"
+borderColor = "#26262F"
+baseRadius = "1rem"
+font = "Kanit:https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap"
+
+[theme.sidebar]
+backgroundColor = "#0E0E14"
+secondaryBackgroundColor = "#17171F"
+
+[server]
+maxUploadSize = 50  # MB per file
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
